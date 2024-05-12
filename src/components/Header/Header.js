@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faHeart, faSearch, faShieldHeart, faUser } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
     return (
         <div>
@@ -21,10 +21,30 @@ const Header = () => {
                  <button className='bg-primary text-white border border-primary rounded-r-md px-4 hover:bg-transparent hover:text-primary transition'>search</button>
               </div>
                {/* icon section */}
-              <div className="icon">
-                  <a href="">hi</a>
-                  <a href="">hi</a>
-                  <a href="">hi</a>
+              <div className="flex items-center space-x-4">
+                  <a className='text-center text-gray-400 t hover:text-primary transition relative' href="">
+                    <div className='text-2xl'>
+                        <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
+                    </div>
+                    <div className='text-xs leading-3'>wish list</div>
+                    <span className='w-4 h-4 rounded-full flex items-center absolute justify-center
+                      bg-primary text-black text-xs right-0 top-0'>8</span>
+                  </a>
+                  <a className='text-center text-gray-400 t hover:text-primary transition relative' href="">
+                    <div className='text-2xl'>
+                        <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+                    </div>
+                    <div className='text-xs leading-3'>Cart</div>
+                    <span className='w-4 h-4 rounded-full flex items-center absolute justify-center
+                      bg-primary text-black text-xs right-0 top-0'>8</span>
+                  </a>
+                  <a className='text-center text-gray-400 t hover:text-primary transition relative' href="">
+                    <div className='text-2xl'>
+                        <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+                    </div>
+                    <div className='text-xs leading-3'>Account</div>
+                     
+                  </a>
               </div>
              </div>
             </header>
