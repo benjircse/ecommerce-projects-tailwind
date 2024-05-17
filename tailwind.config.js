@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  variants: {
+    extend:{
+      display:['group-hover']
+    }
+  },
   theme: {
     screens:{
       sm:'640px',
@@ -24,7 +29,12 @@ module.exports = {
       }
 
     },
+
+   
   },
+
+
   plugins: [],
+ 
 }
 
