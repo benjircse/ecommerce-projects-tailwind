@@ -9,9 +9,9 @@ import outdoor from '../../images/outdoor.png'
 import Mattress from '../../images/Mattress.png'
 const Header = () => {
   return (
-    <div>
-      <header className='py-4 shadow-sm bg-white'>
-        <div className="container flex justify-between items-center">
+    <div >
+      <header className='py-4 shadow-sm w-100% mx-24'>
+        <div className=" flex justify-between items-center">
           {/* logo section */}
           <div className="logo">
             <h1 className='font-bold'><span className='text-primary '>BEN</span>GIR</h1>
@@ -53,7 +53,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <nav className='bg-gray-800'>
+      <nav className='bg-gray-800 px-24'>
         <div className='container flex'>
           {/* all catagoris */}
           <div className='bg-primary flex items-center p-4 cursor-pointer relative group :'>
@@ -62,7 +62,7 @@ const Header = () => {
             </span>
             <span className='text-poppins pl-1 capitalize'>All Category</span>
             <div className="absolute top-full w-full bg-white left-0 shadow-md transition divide-y divide-gray-300 
-            divide-dashed opacity-0 group-hover:opacity-100 duration-300 hover:text-primary font-poppins">
+            divide-dashed opacity-0 group-hover:opacity-100 duration-300 hover:text-primary font-poppins invisible group-hover:visible">
               <a className='flex  hover:bg-gray-100 items-center p-3' href="#">
               <span className='text-primary w-5 h-5 '><img src={bedroom} alt="" /></span>
               <span className='ml-4 '>Bedroom</span>
